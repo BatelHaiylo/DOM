@@ -34,9 +34,21 @@
 // };
 // userBuildDom()
 
-function userBuildInputDom(){
-    var inputType = prompt("write a type of input type:");
+// function userBuildInputDom(){
+//     var inputType = prompt("write a type of input type:");
 
-    document.write("<"+inputType+">")
+//     document.write("<"+inputType+">")
+// };
+// userBuildInputDom()
+
+
+
+function changeClasses(group,userText){
+    var groupElement = document.getElementsByClassName(group);
+    for(i=0; i<groupElement.length; i++){
+        groupElement[i].innerText = userText
+    };
 };
-userBuildInputDom()
+changeClasses("blahG","i love you")
+
+12.צרו 6אלמנטי Pריקים ב html, צרו פונקציה שמכניסה להם אלמנט SPANעם טקס
