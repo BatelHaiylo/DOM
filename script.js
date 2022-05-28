@@ -73,22 +73,97 @@
 // getGrownUserdataplusinputBlock()
 
 
-function movieObject(){
-    var movie = {};
-    movie.name = prompt("enter a movie name") 
-    movie.numberOfViews =+ prompt("enter The number of views of the movie") 
-    movie.year =+ prompt("enter the movie year of release") 
-    movie.image = prompt("enter the movie poster")
+// function movieObject(){
+//     var movie = {};
+//     movie.name = prompt("enter a movie name") 
+//     movie.numberOfViews =+ prompt("enter The number of views of the movie") 
+//     movie.year =+ prompt("enter the movie year of release") 
+//     movie.image = prompt("enter the movie poster")
     
 
-    var moviePoster = {
-        src : movie.image
-    };
+//     var moviePoster = {
+//         src : movie.image
+//     };
 
-    document.write("<h1>"+movie.name+"</h1>"+"<h4>"+movie.year+"</h4>"
-                 + "<br>"+
-                 "<img src=moviePoster.src>"
-                 + "<br>"+
-                 "<span>"+movie.numberOfViews+"</span>")
-};
-movieObject()
+//     document.write("<h1>"+movie.name+"</h1>"+"<h4>"+movie.year+"</h4>"
+//                  + "<br>"+
+//                  "<img src=moviePoster.src>"
+//                  + "<br>"+
+//                  "<span>"+movie.numberOfViews+"</span>")
+// };
+// movieObject()
+
+// function printEmployeeData(){
+//     var employee = {
+//         firstName : prompt("enter your first name") ,
+//         lastName : prompt("enter your last name") ,
+//         email : prompt("enter your email address") ,
+//         department : prompt("enter your department")
+//     };
+//     document.write(
+//         "<h3>"+employee.firstName+"</h3>"+
+//         "<h1>"+employee.lastName+"</h1>"+
+//         "<p><mark>"+employee.email+"</mark></p>"+
+//         "<li>"+employee.department+"</li>"
+//     )
+// };
+// printEmployeeData()
+
+// function buildingObject(){
+//     var userNum = +prompt("please enter a number")
+
+//     for (let i = 0; i <userNum; i++) {
+//         var building = {
+//             contractorName: prompt("please enter the contractor name") ,
+//             companyName: prompt("please enter the company name") ,
+//             numberOfFloors: +prompt("please enter how many floors are in the building") ,
+//             numberOfApartmentsPerFloor: +prompt("please enter how many apartments are on every floor")
+//         };
+
+        // document.write(
+        //     "<div>"+
+        //     "<b>"+building.contractorName+"</b>"+
+        //     "<button>"+building.companyName+"</button>"+
+        //     "<div>"+building.numberOfFloors+"</div>"+
+        //     "<sub>"+building.numberOfApartmentsPerFloor+"</sub>"
+        //     "</div>"+"<br>"
+        //     )
+//     }
+// };
+// buildingObject()
+
+// function shopObject(){
+//     var userNum = +prompt("please enter a number")
+
+//     for (let i = 0; i <userNum; i++) {
+//         var shop = {
+//             shopName: prompt("please enter the shop name") ,
+//             shopAddress: prompt("please enter the shop address") ,
+//             numberOfDepartment: +prompt("please enter how many departments are in the shop") ,
+//             numberOfEmployees: +prompt("please enter the number of employees in the shop")
+//         };
+
+//         if (shop.numberOfEmployees>10) {
+//             document.write(
+//                 "<p>"+
+//                 "<b>"+shop.shopName+"</b>"+
+//                 "<button>"+shop.shopAddress+"</button>"+
+//                 "<div>"+shop.numberOfDepartment+"</div>"+
+//                 "<sub>"+shop.numberOfEmployees+"</sub>"
+//                 +"</p><br>"
+//             )
+//         };
+//     };
+// };
+// shopObject()
+
+// 18..צרו פונקציה שמדפיסה ללוג כמה אלמנטים נוצרו במסך בפונקציה הקודמת (סעיף 17 
+
+// function consoleElementsCreationTimes(num){
+
+//     for (let i = 0; i < num; i++) {
+//         shopObject()
+//         console.log(num)
+//     }
+// };
+// consoleElementsCreationTimes(2)
