@@ -41,14 +41,54 @@
 // };
 // userBuildInputDom()
 
+// function changeClasses(group,userText){
+//     var groupElement = document.getElementsByClassName(group);
+//     for(i=0; i<groupElement.length; i++){
+//         groupElement[i].innerText = userText
+//     };
+// };
+// changeClasses("blahG","i love you")
+
+// 12. צרו פונקציה שמכניסה להם אלמנט SPANעם טקס
+
+// function insertSpanTextToElement(){
+//     var pArr = document.getElementsByTagName("p")
+//     for(i=0; i<pArr.length; i++) {
+//         pArr[i].innerHTML = "<span>"+"BOMMBAclat"+"<span>"
+//     }
+//     console.log(pArr);
+// };
+// insertSpanTextToElement()
 
 
-function changeClasses(group,userText){
-    var groupElement = document.getElementsByClassName(group);
-    for(i=0; i<groupElement.length; i++){
-        groupElement[i].innerText = userText
+// function getGrownUserdataplusinputBlock(){
+//     var userFirstName = prompt("please enter your first name")
+//     var userLastName = prompt("please enter your last name")
+//     var userAge = prompt("please enter your age")
+//     document.write(userFirstName+"       "+userLastName+"       "+userAge)
+//     if(userAge>18){
+//         document.write("<br>"+"<input>"+"  "+"<input>"+"  "+"<input>")
+//     };
+// };
+// getGrownUserdataplusinputBlock()
+
+
+function movieObject(){
+    var movie = {};
+    movie.name = prompt("enter a movie name") 
+    movie.numberOfViews =+ prompt("enter The number of views of the movie") 
+    movie.year =+ prompt("enter the movie year of release") 
+    movie.image = prompt("enter the movie poster")
+    
+
+    var moviePoster = {
+        src : movie.image
     };
-};
-changeClasses("blahG","i love you")
 
-12.צרו 6אלמנטי Pריקים ב html, צרו פונקציה שמכניסה להם אלמנט SPANעם טקס
+    document.write("<h1>"+movie.name+"</h1>"+"<h4>"+movie.year+"</h4>"
+                 + "<br>"+
+                 "<img src=moviePoster.src>"
+                 + "<br>"+
+                 "<span>"+movie.numberOfViews+"</span>")
+};
+movieObject()
