@@ -168,3 +168,47 @@
 // };
 // consoleElementsCreationTimes(2)
 
+// function contactObject(){
+//         var userNum =+ prompt("please enter a number");
+//         var contactObjArray = []
+//         for(i=0; i<userNum; i++){
+//                 var contact = {
+//                         fullName: prompt("please enter your full name"),
+//                         company: prompt("please enter your company"),
+//                         phone: +prompt("please enter your phone"),
+//                         mobile: +prompt("please enter your mobile"),
+//                         email: prompt("please enter your email")
+//                 };
+//                 contactObjArray.push(contact)
+//                 document.write(document.getElementsByTagName("ol").innerText = "<li>"+contact.fullName+"</li>");
+//         };
+//         console.log(contactObjArray)
+// };
+// contactObject()
+
+function doctorObject(){
+        var userNum =+ prompt("please enter a number");
+        var doctorObjArray = []
+        for(i=0; i<userNum; i++){
+                var doctor = {
+                        fullName: prompt("please enter your full name"),
+                        internship: prompt("please enter your internship"),
+                        phone: +prompt("please enter your phone"),
+                        isAvailable: confirm("is the doctor available"),
+                        email: prompt("please enter your email")
+                };
+                doctorObjArray.push(doctor)
+                // document.write(document.getElementsByTagName("table").innerHTML = 
+                // "<tr><td>"+doctor.fullName+"</td>"
+                // +"<td>"+doctor.internship+"</td>"
+                // +"<td>"+doctor.isAvailable+"</td>"
+                // +"<td>"+doctor.email+"</td></tr><br>");
+                document.write(document.getElementsByTagName("table").insertRow(i) = 
+                "<td>"+doctor.fullName+"</td>"
+                +"<td>"+doctor.internship+"</td>"
+                +"<td>"+doctor.isAvailable+"</td>"
+                +"<td>"+doctor.email+"</td>");
+        };
+        console.log(doctorObjArray)
+};
+doctorObject()
