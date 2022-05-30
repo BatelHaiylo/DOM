@@ -205,6 +205,7 @@
 function doctorObject(){
         var userNum =+ prompt("please enter a number");
         var doctorObjArray = []
+        var tableElement = document.getElementById("table");
         for(i=0; i<userNum; i++){
                 var doctor = {
                         fullName: prompt("please enter your full name"),
@@ -214,13 +215,11 @@ function doctorObject(){
                         email: prompt("please enter your email")
                 };
                 doctorObjArray.push(doctor)
-
-                var tableElement = document.getElementsByTagName("table");
-                tableElement[i].innerHTML =
+                tableElement.innerHTML +=
                 "<tr><td>"+doctor.fullName+"</td>"
                 +"<td>"+doctor.internship+"</td>"
                 +"<td>"+doctor.isAvailable+"</td>"
-                +"<td>"+doctor.email+"</td></tr><br>";
+                +"<td>"+doctor.email+"</td></tr>";
                 
         };
         console.log(doctorObjArray)
