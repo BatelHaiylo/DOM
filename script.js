@@ -34,12 +34,27 @@
 // };
 // userBuildDom()
 
-// function userBuildInputDom(){
-//     var inputType = prompt("write a type of input type:");
+// function userBuildTagDom(){
+//     var tagType = prompt("write a type of input type:");
 
-//     document.write("<"+inputType+">")
+//     document.write("<"+tagType+">")
+// };
+// userBuildTagtDom()
+
+// function userBuildInputDom1(){
+//         var userInputType = prompt("write a type of input type:");
+
+//         document.body.textContent("<input type="+userInputType+">");
 // };
 // userBuildInputDom()
+
+// function userBuildInputDom2(){
+//         var inputType = prompt("write a type of input type:");
+
+//         document.innerHTNL("<input type="+inputType+"">");
+// };
+// userBuildInputDom2()
+
 
 // function changeClasses(group,userText){
 //     var groupElement = document.getElementsByClassName(group);
@@ -186,6 +201,7 @@
 // };
 // contactObject()
 
+
 function doctorObject(){
         var userNum =+ prompt("please enter a number");
         var doctorObjArray = []
@@ -198,16 +214,14 @@ function doctorObject(){
                         email: prompt("please enter your email")
                 };
                 doctorObjArray.push(doctor)
-                // document.write(document.getElementsByTagName("table").innerHTML = 
-                // "<tr><td>"+doctor.fullName+"</td>"
-                // +"<td>"+doctor.internship+"</td>"
-                // +"<td>"+doctor.isAvailable+"</td>"
-                // +"<td>"+doctor.email+"</td></tr><br>");
-                document.write(document.getElementsByTagName("table").insertRow(i) = 
-                "<td>"+doctor.fullName+"</td>"
+
+                var tableElement = document.getElementsByTagName("table");
+                tableElement[i].innerHTML =
+                "<tr><td>"+doctor.fullName+"</td>"
                 +"<td>"+doctor.internship+"</td>"
                 +"<td>"+doctor.isAvailable+"</td>"
-                +"<td>"+doctor.email+"</td>");
+                +"<td>"+doctor.email+"</td></tr><br>";
+                
         };
         console.log(doctorObjArray)
 };
