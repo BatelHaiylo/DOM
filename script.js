@@ -183,6 +183,47 @@
 // };
 // consoleElementsCreationTimes(2)
 
+// function ElementsCreationTimes(){
+//         var sum = 0
+//         if (shopObject()=="<p>") {
+//                 sum+=1
+//         };
+//         console.log(sum);
+// }      
+// ElementsCreationTimes ()
+var sum = 0
+ function shopObject(){
+    var userNum = +prompt("please enter a number")
+
+    for (let i = 0; i <userNum; i++) {
+        var shop = {
+            shopName: prompt("please enter the shop name") ,
+            shopAddress: prompt("please enter the shop address") ,
+            numberOfDepartment: +prompt("please enter how many departments are in the shop") ,
+            numberOfEmployees: +prompt("please enter the number of employees in the shop")
+        };
+
+        if (shop.numberOfEmployees>10) {
+            document.write(
+                "<p>"+
+                "<b>"+shop.shopName+"</b>"+
+                "<button>"+shop.shopAddress+"</button>"+
+                "<div>"+shop.numberOfDepartment+"</div>"+
+                "<sub>"+shop.numberOfEmployees+"</sub>"
+                +"</p><br>",
+                sum++
+
+                
+            )
+        };
+    };
+};
+shopObject()
+function someFUNC (){
+console.log(sum)}
+someFUNC()
+
+
 // function contactObject(){
 //         var userNum =+ prompt("please enter a number");
 //         var contactObjArray = []
@@ -202,26 +243,26 @@
 // contactObject()
 
 
-function doctorObject(){
-        var userNum =+ prompt("please enter a number");
-        var doctorObjArray = []
-        var tableElement = document.getElementById("table");
-        for(i=0; i<userNum; i++){
-                var doctor = {
-                        fullName: prompt("please enter your full name"),
-                        internship: prompt("please enter your internship"),
-                        phone: +prompt("please enter your phone"),
-                        isAvailable: confirm("is the doctor available"),
-                        email: prompt("please enter your email")
-                };
-                doctorObjArray.push(doctor)
-                tableElement.innerHTML +=
-                "<tr><td>"+doctor.fullName+"</td>"
-                +"<td>"+doctor.internship+"</td>"
-                +"<td>"+doctor.isAvailable+"</td>"
-                +"<td>"+doctor.email+"</td></tr>";
+// function doctorObject(){
+//         var userNum =+ prompt("please enter a number");
+//         var doctorObjArray = []
+//         var tableElement = document.getElementById("table");
+//         for(i=0; i<userNum; i++){
+//                 var doctor = {
+//                         fullName: prompt("please enter your full name"),
+//                         internship: prompt("please enter your internship"),
+//                         phone: +prompt("please enter your phone"),
+//                         isAvailable: confirm("is the doctor available"),
+//                         email: prompt("please enter your email")
+//                 };
+//                 doctorObjArray.push(doctor)
+//                 tableElement.innerHTML +=
+//                 "<tr><td>"+doctor.fullName+"</td>"
+//                 +"<td>"+doctor.internship+"</td>"
+//                 +"<td>"+doctor.isAvailable+"</td>"
+//                 +"<td>"+doctor.email+"</td></tr>";
                 
-        };
-        console.log(doctorObjArray)
-};
-doctorObject()
+//         };
+//         console.log(doctorObjArray)
+// };
+// doctorObject()
